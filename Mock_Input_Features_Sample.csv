@@ -1,0 +1,7 @@
+Field ID,Column Name,Related Field,Data Type,Unique Values Count,% Missing,Sample Values,Cardinality,Possible Meaning,Notes
+F323,Subscription_Type,Last_Login,int,397,3.7,"2021-01-01, 2021-02-01",Low,Represents user engagement band,Leaky if used with future variables.
+F672,Login_Date,Session_Length,object,335,4.6,"A, B, C",High,Represents user engagement band,Requires transformation before modeling.
+F854,Clicks,Session_Length,int,238,20.5,"100, 200, 300",Medium,Tracks login dates across sessions,Requires transformation before modeling.
+F586,Clicks,Last_Login,object,375,16.5,"A, B, C",High,Aggregated performance score,Commonly bucketed for readability.
+F690,Subscription_Type,Session_Length,float,237,12.5,"2021-01-01, 2021-02-01",Low,Categorical user type indicator,Requires transformation before modeling.
+F666,Clicks,Session_Length,float,422,16.4,"2021-01-01, 2021-02-01",Medium,Represents user engagement band,Used for segmentation and churn modeling.
