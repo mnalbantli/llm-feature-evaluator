@@ -3,8 +3,14 @@ import requests
 import time
 import json
 import re
+import os
 from typing import Dict, List, Optional
 import logging
+from dotenv import load_dotenv
+
+# Load API key securely
+load_dotenv()
+API_KEY = os.getenv("DEEPSEEK_API_KEY")
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -12,7 +18,6 @@ logger = logging.getLogger(__name__)
 
 # Configuration
 CSV_PATH = "Mock_Input_Features_Sample.csv"
-API_KEY = "sk-455bbebad6f9481eafbf2d6cdda52f08"  # Replace with your actual API key
 OUTPUT_PATH = "enriched_feature_review_deepseek_v2.xlsx"
 MAX_RETRIES = 3
 RETRY_DELAY = 2  # seconds
