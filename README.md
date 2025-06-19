@@ -35,8 +35,6 @@ It uses structured prompts built from your metadata and sends them to an LLM (De
 
 ## Example Output
 
-![Terminal Screenshot](screenshots/terminal_screenshot_2.png)
-
 Example result (from `output_structure_example.csv`):
 
 | Column Name     | Is Derived? | Used in Modeling? | Time-Dependent? | Notes                                     |
@@ -65,7 +63,7 @@ pip install -r requirements.txt
 Create a .env file using the structure shown in .env.example.
 
 3. Run the Tool
-
+```
 ❗ Data Privacy
 This project does not contain any real data.
 All examples are synthetic or anonymized for demonstration purposes.
