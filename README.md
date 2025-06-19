@@ -1,12 +1,8 @@
----
-
 ```
 # 🧠 LLM Feature Evaluator
 
 A Python-based tool that automates feature evaluation using an LLM (DeepSeek API).  
 It helps data analysts and scientists reason about dataset columns and determine if they are suitable for modeling.
-
----
 
 ## 🚀 What It Does
 
