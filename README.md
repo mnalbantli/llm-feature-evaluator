@@ -20,7 +20,7 @@ It uses structured prompts built from your metadata and sends them to an LLM (De
 ---
 
 ## Project Structure
-
+```
   llm-feature-evaluator/
     ├── input_features_sample.csv # Mock metadata input (no real data)
     ├── output_structure_example.csv # Sample output for demonstration
@@ -30,7 +30,7 @@ It uses structured prompts built from your metadata and sends them to an LLM (De
     ├── README.md # You're reading it!
     └── screenshots/
     └── terminal_output.png # Terminal log example
-
+```
 ---
 
 ## Example Output
@@ -56,12 +56,11 @@ DEEPSEEK_API_KEY=your_actual_api_key_here
 
 ## Setup Instructions
 
-### 1. Install Dependencies
 ```
+1. Install Dependencies
 pip install -r requirements.txt
 2. Add your .env file
 Create a .env file using the structure shown in .env.example.
-
 3. Run the Tool
 ```
 ❗ Data Privacy
