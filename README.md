@@ -33,7 +33,7 @@ It uses structured prompts built from your metadata and sends them to an LLM (De
 
 ---
 
-## 🧪 Example Output
+## Example Output
 
 ![Terminal Screenshot](screenshots/terminal_screenshot_2.png)
 
