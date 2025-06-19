@@ -264,7 +264,7 @@ def generate_summary_report(df_out: pd.DataFrame, total_rows: int) -> None:
             error_count += df_out[field].str.contains("ERROR:", na=False).sum()
     
     logger.info(f"""
-    📊 PROCESSING SUMMARY:
+    PROCESSING SUMMARY:
     - Total rows processed: {total_rows}
     - Total fields expected: {total_rows * len(EXPECTED_FIELDS)}
     - Fields with errors: {error_count}
