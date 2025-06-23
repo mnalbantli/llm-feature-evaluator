@@ -17,6 +17,9 @@ For each column in your dataset, the tool answers:
 
 It uses structured prompts built from your metadata and sends them to an LLM (DeepSeek) for explanation and classification.
 
+> ‼️ Context-aware parsing: As of June 23, the evaluator now considers *both previous and upcoming rows* during reasoning.  
+> This bi-directional context helps the LLM produce more consistent and accurate interpretations.
+
 ---
 
 ## Project Structure
@@ -80,6 +83,12 @@ Message me on LinkedIn — happy to connect
 
 ---
 
+## 🔄 Update History
+
+### June 23, 2025
+- 🧠 **Bi-directional context window added** to evaluation logic.
+- The system now incorporates *surrounding rows* (before and after the current one) to reduce isolated misclassifications.
+- Improves accuracy, especially for derived or position-sensitive fields near the start or end of datasets.
 
 
 
